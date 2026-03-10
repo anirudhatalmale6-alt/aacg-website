@@ -152,6 +152,9 @@ h1, h2, h3, h4 {
 .navbar-logo img {
     height: 46px;
     width: auto;
+    border-radius: 8px;
+    border: 2px solid var(--navy);
+    box-shadow: 0 2px 8px rgba(27, 58, 107, 0.15);
 }
 
 .navbar-logo span {
@@ -278,7 +281,9 @@ h1, h2, h3, h4 {
 .hero-logo {
     width: 140px;
     margin: 0 auto 36px;
-    filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.3));
+    border-radius: 16px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
     animation: heroLogoIn 1s ease-out 0.2s both;
 }
 
@@ -987,7 +992,9 @@ h1, h2, h3, h4 {
 .footer-logo {
     height: 40px;
     margin: 0 auto 16px;
-    opacity: 0.6;
+    opacity: 0.8;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .footer-name {
