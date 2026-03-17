@@ -580,8 +580,8 @@ h1, h2, h3, h4 {
 }
 
 .partner-slot {
-    background: var(--off-white);
-    border: 2px dashed var(--gray-100);
+    background: var(--white);
+    border: 1px solid var(--gray-100);
     border-radius: 10px;
     padding: 36px 20px;
     display: flex;
@@ -590,13 +590,14 @@ h1, h2, h3, h4 {
     justify-content: center;
     gap: 12px;
     text-align: center;
-    transition: border-color var(--transition), background var(--transition);
+    transition: transform var(--transition), box-shadow var(--transition);
     min-height: 140px;
+    box-shadow: var(--shadow-sm);
 }
 
 .partner-slot:hover {
-    border-color: var(--gray-300);
-    background: var(--gray-50);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
 }
 
 .partner-slot-icon {
@@ -611,10 +612,17 @@ h1, h2, h3, h4 {
     font-size: 18px;
 }
 
+.partner-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
 .partner-slot span {
     font-size: 13px;
-    font-weight: 500;
-    color: var(--gray-300);
+    font-weight: 600;
+    color: var(--text-secondary);
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
